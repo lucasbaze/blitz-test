@@ -42,7 +42,7 @@ export const EditQuestion = () => {
                 id: question.id,
                 ...values
               });
-              await setQueryData(updated);
+              // await setQueryData(updated);
               router.push(`/questions/${updated.id}`);
             } catch (error) {
               console.error(error);
